@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <script>
+        var i;
+
+    function check()
+    {
+        if (typeof(Worker) !== "undefined") {
+  document.write("! Web worker support!");
+  // Some code.....
+} else {
+  document.write("Na");
+}
+    }
+
+    function startWorker() 
+    {
+        if(typeof(i) == "undefined")
+        {
+            i = new Worker("demo_workers.js");
+        }
+        i.onmessage = function(event)
+        {
+            document.getElementById("result").innerHTML = event.data;
+        };
+    }
+
+    function stopWorker()
+    {
+        i.terminate();
+        i = undefined;
+    }
+    </script>
+</head>
+<body>
+
+    <h2>Web Worker API</h2>
+    <p>Count numbers: <output id="result"></output></p>
+    <button onclick="startWorker()">Start Worker</button>
+    <button onclick="stopWorker()">Stop Worker</button>
+    <button onclick="check()">Check Worker</button>
+
+</body>
+</html>
