@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eingabefeld mit Ausgabe in HTML</title>
+<script src="scripts/einausgabe.js"></script>
+
+</head>
+<body>
+    <h1>Eingabefeld mit Ausgabe in HTML</h1>
+    <input type="text" id="eingabe"> <br>
+    <button onclick="einAusgabe()">Ausgeben</button> <br>
+    <button onclick="einAusgabe2()">Hinzufügen</button>
+    <div id="ausgabe1">Ausgabe: </div>
+
+    <h2>Automatische Ausgabe</h2>
+        <input type="text" id="eingabe2" size="50" onkeyup="autoAusgabe()"> <br>
+        <p id="ausgabe2"></p>
+</body>
+</html>

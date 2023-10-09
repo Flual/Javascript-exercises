@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript erste Schritte</title>
+    <script>
+        //einzeiliger Kommentar
+        /*mehrzeiliger
+        Kommentar*/
+        //Zweite variante JS zu schreiben
+        function helloworld()
+            {
+                alert('Hello World!');
+            }
+        window.onload = helloworld;
+        /*
+            *Groß- und Kleinschreibung wird unterschieden
+            *erlaubte zeichen: a..zA..Z0,,9_$
+            *am Beginn ein Buchstabe
+            *schlechte Bezeichner: a,b,c,...,x,y,z,´
+            *gute Bezeichner: adressFormAufruf, userEingabe
+            *am besten alle Bezeichner in Englisch
+            *CamelCase
+            *Klassen bezeichnet man mit großen Anfangsbuchstaben
+            *nur Großbuchstaben für Konstanten
+        */
+    </script>
+    <!-- Variante 3 script extern eingebunden -->
+    <script src="scripts/erstesscript.js"></script>
+</head>
+<body>
+<!-- Javascript inline im HTML Code: nicht der Standard, nur in Ausnahmefall benutzen -->
+    <h1>Javascript erste Schritte</h1>
+    <button onclick="alert('Hello World!')">Klick mich!</button>
+    <button onclick="helloworld()">Klick Mich!</button>
+    <button onclick="meldungAnzeigen()">Klick Mich!</button>
+    
+</body>
+</html>

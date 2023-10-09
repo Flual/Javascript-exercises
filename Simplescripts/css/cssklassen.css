@@ -1,0 +1,18 @@
+.text {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    color:blueviolet;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.rahmen
+{
+    border: 5px solid rgb(182, 53, 53);
+    border-radius: 10px;
+}
+
+.innenabstand 
+{
+    padding-left: 2rem;
+}

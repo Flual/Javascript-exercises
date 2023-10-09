@@ -1,0 +1,12 @@
+body 
+{
+    background-color: aqua;
+}
+.quadrat
+{
+    border: 2px solid black;
+    width: 100px;
+    height: 75px;
+    background-color: red;
+    margin-left: 0px;
+}
